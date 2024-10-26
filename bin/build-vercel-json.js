@@ -63,9 +63,9 @@ const HTML_HEADERS = {
   'cache-control': 'public,max-age=3600',
   'content-security-policy': [
     "default-src 'self'",
-    `script-src 'self' ${SCRIPT_CHECKSUMS}`,
+    `script-src 'self' pnpde.social ${SCRIPT_CHECKSUMS}`,
     "worker-src 'self'",
-    "style-src 'self' 'unsafe-inline'",
+    "style-src 'self' pnpde.social 'unsafe-inline'",
     "img-src 'self' * data: blob:",
     "media-src 'self' *",
     "connect-src 'self' * data: blob:",
