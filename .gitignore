@@ -16,3 +16,9 @@ yarn-error.log
 .now
 .vercel
 /webpack/*.cjs
+
+.yarn/*
+.yarnrc.yml
+vercel.json
+yarn.lock
+package.json

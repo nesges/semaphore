@@ -1,14 +1,31 @@
-$main-theme-color: #6248CA;
-$body-bg-color: lighten($main-theme-color, 38%);
+$p-petrol-light: #177e89;
+$p-petrol-dark: #085c61;
+$p-yellow: #ffc857;
+$p-red: #db3a34;
+$p-dark: #323031;
+
+$main-theme-color: $p-petrol-light;
+$body-bg-color: #eee;
 $anchor-color: $main-theme-color;
-$main-text-color: #333;
-$border-color: #dadada;
+$main-text-color: $p-dark;
+$border-color: $p-yellow;
 $main-bg-color: white;
 $secondary-text-color: white;
 $toast-border: #fafafa;
-$toast-bg: #333;
+$toast-bg: $p-dark;
 $focus-outline: lighten($main-theme-color, 30%);
 $compose-background: lighten($main-theme-color, 32%);
 
 @import "_base.scss";
 @import "_light_scrollbars.scss";
+
+:root {
+  --action-button-fill-color: #{lighten($p-petrol-light, 0%)};
+  --action-button-fill-color-hover: #{lighten($p-yellow, 0%)};;
+  --action-button-fill-color-active: #{lighten($p-yellow, 5%)};
+  --action-button-fill-color-pressed: #{lighten($p-red, 0%)};;
+  --action-button-fill-color-pressed-hover: #{darken($p-red, 2%)};
+  --action-button-fill-color-pressed-active: #{darken($p-red, 15%)};
+
+  --nav-indicator-bg: #{$main-theme-color};
+}

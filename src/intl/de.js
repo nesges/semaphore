@@ -1,15 +1,15 @@
 export default {
   // Home page, basic <title> and <description>
   appName: 'Semaphore',
-  appDescription: 'Ein alternativer Web Client für Mastodon, der auf Geschwindigkeit und einfache Bedienung ausgelegt ist.',
+  appDescription: 'Ein alternativer Web Client für Mastodon, der auf Geschwindigkeit und einfache Bedienung optimiert ist.',
   homeDescription: `
     <p>
       Semaphore ist ein Web Client für
       <a rel="noopener" target="_blank" href="https://joinmastodon.org">Mastodon</a>,
-      der für Geschwindigkeit und einfache Bedienung konzipiert wurde.
+      der auf Geschwindigkeit und einfache Bedienung optimiert wurde.
     </p>
     <p>
-      Dich bei einer Instanz anmeldest:
+      Melde dich an einer Instanz an:
     </p>`,
   logIn: 'Anmelden',
   footer: `
@@ -62,7 +62,7 @@ export default {
   local: 'Lokal',
   notifications: 'Benachrichtigungen',
   mutedUsers: 'Stummgeschaltete Benutzer',
-  pinnedStatuses: 'Angeheftete Tröts',
+  pinnedStatuses: 'Angeheftete Beiträge',
   followRequests: 'Followeranfragen',
   followRequestsLabel: `Followeranfragen {hasFollowRequests, select,
     true {({count})}
@@ -98,8 +98,8 @@ export default {
   listNotLoggedIn: 'Hier erscheint eine Liste, wenn Du Dich anmeldest.',
   notificationsNotLoggedIn: 'Hier erscheinen Deine Benachrichtigungen, wenn Du Dich anmeldest.',
   notificationMentionsNotLoggedIn: 'Hier erscheinen Deine Benachrichtigungen zu Erwähnungen, wenn Du Dich anmeldest.',
-  statusNotLoggedIn: 'Hier erscheint der Faden zu einem Tröt, wenn Du Dich anmeldest.',
-  tagNotLoggedIn: 'Hier erscheinen Tröts zu einem hashtag, wenn Du Dich anmeldest.',
+  statusNotLoggedIn: 'Hier erscheint der Thread zu einem Beitrag, wenn Du Dich anmeldest.',
+  tagNotLoggedIn: 'Hier erscheinen Beiträge zu einem Hashtag, wenn Du Dich anmeldest.',
   // Notification subpages
   filters: 'Filter',
   all: 'Alle',
@@ -128,7 +128,7 @@ export default {
       }
       um die Spalten umzuschalten
     </li>
-    <li><kbd>7</kbd> oder <kbd>c</kbd> zum Erstellen eines neuen Tröts</li>
+    <li><kbd>7</kbd> oder <kbd>c</kbd> zum Erstellen eines neuen Beitrags</li>
     <li><kbd>s</kbd> oder <kbd>/</kbd> zum Suchen</li>
     <li><kbd>g</kbd> + <kbd>h</kbd> zur Startseite gehen</li>
     <li><kbd>g</kbd> + <kbd>n</kbd> zu den Benachrichtigungen gehen</li>
@@ -140,18 +140,18 @@ export default {
     <li><kbd>Rückschritttaste</kbd> zurückgehen, Dialogfelder schließen</li>
   `,
   timelineHotkeys: `
-    <li><kbd>j</kbd> oder <kbd>↓</kbd> nächsten Tröt ansteuern</li>
-    <li><kbd>k</kbd> oder <kbd>↑</kbd> den vorherigen Tröt ansteuern</li>
-    <li><kbd>.</kbd> neue Tröts anzeigen und nach oben scrollen</li>
-    <li><kbd>o</kbd> Tröt öffnen</li>
-    <li><kbd>f</kbd> Tröt favorisieren</li>
-    <li><kbd>b</kbd> Tröt boosten</li>
-    <li><kbd>r</kbd> auf Tröt antworten</li>
+    <li><kbd>j</kbd> oder <kbd>↓</kbd> nächsten Beitrag ansteuern</li>
+    <li><kbd>k</kbd> oder <kbd>↑</kbd> den vorherigen Beitrag ansteuern</li>
+    <li><kbd>.</kbd> neue Beiträge anzeigen und nach oben scrollen</li>
+    <li><kbd>o</kbd> Beitrag öffnen</li>
+    <li><kbd>f</kbd> Beitrag favorisieren</li>
+    <li><kbd>b</kbd> Beitrag boosten</li>
+    <li><kbd>r</kbd> auf Beitrag antworten</li>
     <li><kbd>i</kbd> Bilder, Videos oder Audio öffnen</li>
     <li><kbd>y</kbd> sensible Medieninhalte zeigen oder verbergen</li>
     <li><kbd>m</kbd> den Verfasser erwähnen</li>
     <li><kbd>p</kbd> das Profil des Verfassers öffnen</li>
-    <li><kbd>l</kbd> den Link des aktuellen Tröts in einem neuen Tab öffnen</li>
+    <li><kbd>l</kbd> den Link des aktuellen Beitrags in einem neuen Tab öffnen</li>
     <li><kbd>x</kbd> den Text hinter der Inhaltswarnung anzeigen oder verbergen</li>
     <li><kbd>z</kbd> den Text hinter der Inhaltswarnung für alle in dieser Unterhaltung anzeigen oder verbergen</li>
   `,
@@ -186,9 +186,9 @@ export default {
   }`,
   pinPage: 'Hefte {label} an',
   // Status composition
-  composeStatus: 'Tröt erstellen',
-  postStatus: 'Tröt!',
-  contentWarning: 'Inhaltswarnung',
+  composeStatus: 'Neuer Beitrag',
+  postStatus: 'Veröffentlichen',
+  contentWarning: 'Inhaltshinweis',
   dropToUpload: 'Fallenlassen zum Hochladen',
   invalidFileType: 'Ungültiger Dateityp',
   composeLabel: "Was gibt's Neues?",
@@ -267,25 +267,25 @@ export default {
   additionalComments: 'Zusätzliche Kommentare',
   forwardDescription: 'Auch an die Moderatoren von {instance} weiterleiten?',
   forwardLabel: 'An {instance} weiterleiten',
-  unableToLoadStatuses: 'Kann neueste Tröts nicht laden: {error}',
+  unableToLoadStatuses: 'Kann neueste Beiträge nicht laden: {error}',
   report: 'Melden',
   noContent: '(Keine Inhalte)',
-  noStatuses: 'Keine Tröts zum Melden vorhanden',
+  noStatuses: 'Keine Beiträge zum Melden vorhanden',
   // Status options
   unpinFromProfile: 'Vom Profil abheften',
   pinToProfile: 'An Profil anheften',
   muteConversation: 'Unterhaltung stummschalten',
   unmuteConversation: 'Stummschaltung der Unterhaltung aufheben',
-  bookmarkStatus: 'Tröt als Lesezeichen speichern',
-  unbookmarkStatus: 'Tröt aus Lesezeichen entfernen',
+  bookmarkStatus: 'Beitrag als Lesezeichen speichern',
+  unbookmarkStatus: 'Beitrag aus Lesezeichen entfernen',
   deleteAndRedraft: 'Löschen und neu eingeben',
-  reportStatus: 'Tröt melden',
-  shareStatus: 'Tröt teilen',
-  copyLinkToStatus: 'Link zum Tröt kopieren',
+  reportStatus: 'Beitrag melden',
+  shareStatus: 'Beitrag teilen',
+  copyLinkToStatus: 'Link zum Beitrag kopieren',
   // Account profile
   profileForAccount: 'Profil für {account}',
   statisticsAndMoreOptions: 'Statistiken und weitere Optionen',
-  statuses: 'Tröts',
+  statuses: 'Beiträge',
   follows: 'Folgt',
   followers: 'Folgende',
   moreOptions: 'Weitere Optionen',
@@ -326,27 +326,20 @@ export default {
     Es ist eine Fortsetzung des Pinafore-Projekts von <a rel="noopener" target="_blank" href="https://nolanlawson.com">Nolan Lawson</a>.
   </p>
 
-  <h2 id="privacy-policy">Datenschutzerklärung</h2>
+  <h2>Credits</h2>
 
   <p>
-    Semaphore speichert keine persönlichen Informationen auf seinen Servern,
-    einschließlich, aber nicht beschränkt auf, Namen, E-Mail-Adressen,
-    IP-Adressen, Beiträgen, und Fotos.
-  </p>
-
-  <p>
-    Semaphore ist eine statische Seite. Alle Daten werden lokal in Ihrem Browser gespeichert und mit den Instanzen des Fediversums geteilt, zu denen Sie sich verbinden.
-  </p>
-
-  <h2>Mitwirkende</h2>
-
-  <p>
-    Icons provided by <a rel="noopener" target="_blank" href="http://fontawesome.io/">Font Awesome</a>.
-  </p>
-
-  <p>
+    Icons provided by <a rel="noopener" target="_blank" href="http://fontawesome.io/">Font Awesome</a>.<br>
     Logo thanks to "Flag" by AFY Studio from
     <a rel="noopener" target="_blank" href="https://thenounproject.com/">the Noun Project</a>.
+  </p>
+
+  <p id="privacy-policy" style="text-align:center">
+    <a href="https://pnpde.social/impressum.php">Impressum</a>
+    &middot;
+    <a href="https://pnpde.social/datenschutz.php">Datenschutzerklärung</a>
+    &middot;
+    <a href="https://pnpde.social/kontakt.php">Kontakt</a>
   </p>`,
   // Settings
   settings: 'Einstellungen',
@@ -358,10 +351,10 @@ export default {
   largeMedia: 'Große eingebettete Bilder und Videos anzeigen',
   autoplayGifs: 'Animierte Gifs automatisch abspielen',
   hideCards: 'Linkvorschauen verbergen',
-  underlineLinks: 'Links in Tröts und Profilen unterstreichen',
+  underlineLinks: 'Links in Beiträgen und Profilen unterstreichen',
   accessibility: 'Barrierefreiheit',
   reduceMotion: 'Bewegung in Animationen der Oberfläche reduzieren',
-  disableTappable: 'Berührungsempfindlichkeit auf ganzem Tröt deaktivieren',
+  disableTappable: 'Berührungsempfindlichkeit auf ganzem Beitrag deaktivieren',
   removeEmoji: 'Emoji aus Anzeigenamen der Benutzer entfernen',
   shortAria: 'Verkürzte aria-label für Artikel verwenden',
   theme: 'Design',
@@ -396,7 +389,7 @@ export default {
   // to see a description. It's hard to properly internationalize, so we just break up the strings.
   disableInfiniteScrollPre: '',
   disableInfiniteScrollText: 'Unendliches Scrollen',
-  disableInfiniteScrollDescription: 'Wenn unendliches Scrollen deaktiviert ist, erscheinen neue Tröts nicht automatisch am unteren oder oberen Ende der zeitleiste. Stattdessen kannst Du weitere Inhalte durch dafür vorgesehene Schaltflächen nachladen.',
+  disableInfiniteScrollDescription: 'Wenn unendliches Scrollen deaktiviert ist, erscheinen neue Beiträge nicht automatisch am unteren oder oberen Ende der zeitleiste. Stattdessen kannst Du weitere Inhalte durch dafür vorgesehene Schaltflächen nachladen.',
   disableInfiniteScrollPost: 'deaktivieren',
   // Instance settings
   loggedInAs: 'Eingeloggt als',
@@ -410,20 +403,20 @@ export default {
   instanceColon: 'Instanz:',
   // Custom tooltip, concatenated together
   getAnInstancePre: 'Hast Du noch keine',
-  getAnInstanceText: 'instanz',
-  getAnInstanceDescription: 'Eine Instanz ist Deine Heimat auf Mastodon, wie z.B. mastodon.social oder cybre.space.',
+  getAnInstanceText: 'Instanz',
+  getAnInstanceDescription: 'Eine Instanz ist Deine Heimat auf Mastodon, wie z.B. pnpde.mastodon.social oder mastodon.social',
   getAnInstancePost: '?',
   joinMastodon: 'Tritt Mastodon bei!',
-  instancesYouveLoggedInTo: 'Instanzen, in denen Du angemeldet bist:',
+  instancesYouveLoggedInTo: 'Instanzen, an denen Du angemeldet bist:',
   addAnotherInstance: 'Eine weitere Instanz hinzufügen',
-  youreNotLoggedIn: 'Du bist bei keiner Instanz angemeldet.',
+  youreNotLoggedIn: 'Du bist an keiner Instanz angemeldet.',
   currentInstanceLabel: `{instance} {current, select,
     true {(jetzige Instanz)}
     other {}
   }`,
   // Link text
   logInToAnInstancePre: '',
-  logInToAnInstanceText: 'Melde Dich bei einer Instanz an',
+  logInToAnInstanceText: 'Melde Dich an einer Instanz an',
   logInToAnInstancePost: 'um Semaphore zu verwenden.',
   // Another custom tooltip
   showRingPre: 'Immer einen',
@@ -457,7 +450,7 @@ export default {
   darkBackground: 'Dunkler Hintergrund',
   lightBackground: 'Heller Hintergrund',
   themeLabel: `{label} {default, select,
-    true {(standard)}
+    true {}
     other {}
   }`,
   animatedImage: 'Animiertes Gif: {description}',
@@ -480,9 +473,9 @@ export default {
     one {einmal}
     other {{count} mal}
   }`,
-  pinnedStatus: 'Angehefteter Tröt',
-  rebloggedYou: 'hat Deinen Tröt geboostet',
-  favoritedYou: 'hat Deinen Tröt favorisiert',
+  pinnedStatus: 'Angehefteter Beitrag',
+  rebloggedYou: 'hat Deinen Beitrag geboostet',
+  favoritedYou: 'hat Deinen Beitrag favorisiert',
   followedYou: 'folgt Dir jetzt',
   pollYouCreatedEnded: 'Eine von Dir erstellte Umfrage ist beendet',
   pollYouVotedEnded: 'Eine Umfrage, an der Du teilgenommen hast, ist beendet',
@@ -492,20 +485,22 @@ export default {
   clickToShowSensitive: 'Sensible Inhalte. Klicke zum Anzeigen.',
   longPost: 'Langer Beitrag',
   // Accessible status labels
-  accountRebloggedYou: '{account} hat Deinen Tröt geboostet',
-  accountFavoritedYou: '{account} hat Deinen Tröt favorisiert',
+  accountRebloggedYou: '{account} hat Deinen Beitrag geboostet',
+  accountFavoritedYou: '{account} hat Deinen Beitrag favorisiert',
   rebloggedByAccount: 'geboostet von {account}',
   contentWarningContent: 'Inhaltswarnung: {spoiler}',
   hasMedia: 'hat Medien',
   hasPoll: 'hat Umfrage',
-  shortStatusLabel: '{privacy} Tröt von {account}',
+  shortStatusLabel: '{privacy} Beitrag von {account}',
   // Privacy types
   public: 'Öffentlich',
   unlisted: 'Nicht gelistet',
   followersOnly: 'Nur Folgende',
   direct: 'Direkt',
   // Themes
-  themeRoyal: 'Light',
+  themePnpdeSocial: 'pnpde.social',
+  themePnpdeSocialDark: 'pnpde.social Dark',
+  themeRoyal: 'Royal Light',
   themeScarlet: 'Scarlet',
   themeSeafoam: 'Seafoam',
   themeHotpants: 'Hotpants',
@@ -513,7 +508,7 @@ export default {
   themeMajesty: 'Majesty',
   themeGecko: 'Gecko',
   themeGrayscale: 'Grayscale',
-  themeDark: 'Dark',
+  themeDark: 'Royal Dark',
   themeCobalt: 'Cobalt',
   themeSorcery: 'Sorcery',
   themePunk: 'Punk',
@@ -552,21 +547,21 @@ export default {
   showCountMore: 'Zeige {count} weitere',
   nothingToShow: 'Nichts zum anzeigen.',
   // status thread page
-  statusThreadPage: 'Seite für Tröt-Unterhaltung',
-  status: 'Tröt',
+  statusThreadPage: 'Seite für Unterhaltung',
+  status: 'Beitrag',
   // toast messages
   blockedAccount: 'Account blockiert',
   unblockedAccount: 'Blockade des Accounts aufgehoben',
   unableToBlock: 'Konnte Account nicht blockieren: {error}',
   unableToUnblock: 'Konnte Blockade des Accounts nicht aufheben: {error}',
-  bookmarkedStatus: 'Tröt als Lesezeichen gespeichert',
-  unbookmarkedStatus: 'Tröt aus Lesezeichen entfernt',
+  bookmarkedStatus: 'Beitrag als Lesezeichen gespeichert',
+  unbookmarkedStatus: 'Beitrag aus Lesezeichen entfernt',
   unableToBookmark: 'Konnte kein lesezeichen setzen: {error}',
   unableToUnbookmark: 'Konnte Lesezeichen nicht entfernen: {error}',
   cannotPostOffline: 'Du kannst nicht senden, wenn Du offline bist',
-  unableToPost: 'Konnte Tröt nicht posten: {error}',
-  statusDeleted: 'Tröt gelöscht',
-  unableToDelete: 'Konnte Tröt nicht löschen: {error}',
+  unableToPost: 'Konnte Beitrag nicht posten: {error}',
+  statusDeleted: 'Beitrag gelöscht',
+  unableToDelete: 'Konnte Beitrag nicht löschen: {error}',
   cannotFavoriteOffline: 'Du kannst nicht favorisieren, wenn Du offline bist',
   cannotUnfavoriteOffline: 'Du kannst Favorisierung nicht zurücknehmen, wenn Du offline bist',
   unableToFavorite: 'Konnte nicht favorisieren: {error}',
@@ -586,9 +581,9 @@ export default {
   unmutedConversation: 'Stummschaltung der Unterhaltung aufgehoben',
   unableToMuteConversation: 'Konnte Unterhaltung nicht stummschalten: {error}',
   unableToUnmuteConversation: 'Konnte Stummschaltung der Unterhaltung nicht aufheben: {error}',
-  unpinnedStatus: 'Tröt abgeheftet',
-  unableToPinStatus: 'Konnte Tröt nicht anheften: {error}',
-  unableToUnpinStatus: 'Konnte Tröt nicht abheften: {error}',
+  unpinnedStatus: 'Beitrag gelöst',
+  unableToPinStatus: 'Konnte Beitrag nicht anheften: {error}',
+  unableToUnpinStatus: 'Konnte Beitrag nicht lösen: {error}',
   unableToRefreshPoll: 'Konnte Umfrage nicht aktualisieren: {error}',
   unableToVoteInPoll: 'Konte in der Umfrage nicht abstimmen: {error}',
   cannotReblogOffline: 'Du kannst nicht boosten, wenn Du offline bist.',
@@ -612,7 +607,7 @@ export default {
   unableToHideReblogs: 'Kann Boosts nicht verbergen: {error}',
   unableToShare: 'Teilen fehlgeschlagen: {error}',
   showingOfflineContent: 'Anforderung übers Internet fehlgeschlagen. Zeige Offline-Inhalte an.',
-  youAreOffline: 'Du scheinst keine Verbindung zum Internet zu haben. Du kanst weiterhin Tröts lesen, solange Du offline bist.',
+  youAreOffline: 'Du scheinst keine Verbindung zum Internet zu haben. Du kanst weiterhin Beiträge lesen, solange Du offline bist.',
   // Snackbar UI
   updateAvailable: 'Update der App verfügbar',
   // Details

@@ -1,6 +1,18 @@
 const themes = [
   {
     name: 'default',
+    label: 'intl.themePnpdeSocial',
+    dark: false,
+    color: '#177e89'
+  },
+  {
+    name: 'pnpde-social-dark',
+    label: 'intl.themePnpdeSocialDark',
+    dark: true,
+    color: '#085c61'
+  },
+  {
+    name: 'light',
     label: 'intl.themeRoyal',
     dark: false,
     color: '#6248CA'

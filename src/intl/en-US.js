@@ -543,6 +543,8 @@ export default {
   followersOnly: 'Followers-only',
   direct: 'Direct',
   // Themes
+  themePnpdeSocial: 'pnpde.social',
+  themePnpdeSocialDark: 'pnpde.social Dark',
   themeRoyal: 'Light',
   themeScarlet: 'Scarlet',
   themeSeafoam: 'Seafoam',
