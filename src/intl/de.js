@@ -21,7 +21,8 @@ export default {
       <a rel="noopener" target="_blank"
          href="https://github.com/NickColley/semaphore/blob/main/LICENSE">AGPL Lizenz</a>.
       Hier ist die <a href="/settings/about#privacy-policy" rel="prefetch">Datenschutzerklärung</a>.
-      Es ist eine Fortsetzung des Pinafore-Projekts von <a rel="noopener" target="_blank" href="https://nolanlawson.com">Nolan Lawson</a>.
+      Semaphore basiert auf dem Pinafore-Projekt von <a rel="noopener" target="_blank" href="https://nolanlawson.com">Nolan Lawson</a>.
+      Anpassungen für pndpe.social von <a href="https://github.com/nesges/semaphore">Thomas Nesges</a>.
     </p>
   `,
   // Generic UI
@@ -316,30 +317,31 @@ export default {
   about: 'Über',
   aboutApp: 'Über Semaphore',
   aboutAppDescription: `
-  <p>
-    Semaphore ist
-    <a rel="noopener" target="_blank" href="https://github.com/NickColley/semaphore">quelloffene Software</a>,
-    gepflegt von <a rel="noopener" target="_blank" href="https://nickcolley.co.uk">Nick Colley</a>
-    und verteilt unter der
-    <a rel="noopener" target="_blank"
-      href="https://github.com/NickColley/semaphore/blob/main/LICENSE">AGPL Lizenz</a>.
-    Es ist eine Fortsetzung des Pinafore-Projekts von <a rel="noopener" target="_blank" href="https://nolanlawson.com">Nolan Lawson</a>.
-  </p>
+  <br>
+  Semaphore ist
+      <a rel="noopener" target="_blank" href="https://github.com/NickColley/semaphore">quelloffene Software</a>,
+      gepflegt von <a rel="noopener" target="_blank" href="https://nickcolley.co.uk">Nick Colley</a>
+      und verteilt unter der
+      <a rel="noopener" target="_blank"
+         href="https://github.com/NickColley/semaphore/blob/main/LICENSE">AGPL Lizenz</a>.
+      Semaphore basiert auf dem Pinafore-Projekt von <a rel="noopener" target="_blank" href="https://nolanlawson.com">Nolan Lawson</a>.
+      Anpassungen für pndpe.social von <a href="https://github.com/nesges/semaphore">Thomas Nesges</a>.
 
   <h2>Credits</h2>
 
-  <p>
-    Icons provided by <a rel="noopener" target="_blank" href="http://fontawesome.io/">Font Awesome</a>.<br>
-    Logo thanks to "Flag" by AFY Studio from
-    <a rel="noopener" target="_blank" href="https://thenounproject.com/">the Noun Project</a>.
-  </p>
+  <ul>
+    <li>Icons from <a rel="noopener" target="_blank" href="http://fontawesome.com/">Font Awesome by Dave Gandy</a>, SIL OFL 1.1</li>
+    <li>Logo "Flag" from <a rel="noopener" target="_blank" href="https://thenounproject.com/icon/flag-1108961/">Noun Project</a>, created by AFY Studio, CC-BY-3.0</li>
+  </ul>
+  
+  <h2>Impressum</h2>
 
-  <p id="privacy-policy" style="text-align:center">
-    <a href="https://pnpde.social/impressum.php">Impressum</a>
-    &middot;
-    <a href="https://pnpde.social/datenschutz.php">Datenschutzerklärung</a>
-    &middot;
-    <a href="https://pnpde.social/kontakt.php">Kontakt</a>
+  <p id="privacy-policy">
+    <ul>
+        <li><i class="fa-solid fa-user-tie"></i> <a href="https://pnpde.social/impressum.php">Impressum</a></li>
+        <li><i class="fa-solid fa-shield"></i> <a href="https://pnpde.social/datenschutz.php">Datenschutzerklärung</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="https://pnpde.social/kontakt.php">Kontakt</a></li>
+    </ul>
   </p>`,
   // Settings
   settings: 'Einstellungen',
@@ -494,9 +496,9 @@ export default {
   shortStatusLabel: '{privacy} Beitrag von {account}',
   // Privacy types
   public: 'Öffentlich',
-  unlisted: 'Nicht gelistet',
-  followersOnly: 'Nur Folgende',
-  direct: 'Direkt',
+  unlisted: 'Öffentlich (still)',
+  followersOnly: 'Follower',
+  direct: 'Bestimmte Profile',
   // Themes
   themePnpdeSocial: 'pnpde.social',
   themePnpdeSocialDark: 'pnpde.social Dark',

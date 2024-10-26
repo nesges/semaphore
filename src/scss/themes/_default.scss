@@ -8,7 +8,7 @@ $main-theme-color: $p-petrol-light;
 $body-bg-color: #eee;
 $anchor-color: $main-theme-color;
 $main-text-color: $p-dark;
-$border-color: $p-yellow;
+$border-color: $main-theme-color;
 $main-bg-color: white;
 $secondary-text-color: white;
 $toast-border: #fafafa;
@@ -17,7 +17,13 @@ $focus-outline: lighten($main-theme-color, 30%);
 $compose-background: lighten($main-theme-color, 32%);
 
 @import "_base.scss";
-@import "_light_scrollbars.scss";
+
+$scrollbar-face: #{lighten($main-theme-color, 0%)} !default;
+$scrollbar-face-hover: #{lighten($main-theme-color, 10%)} !default;
+$scrollbar-face-active: #{lighten($main-theme-color, 5%)} !default;
+$scrollbar-track: #{darken($body-bg-color, 5%)} !default;
+
+@import "_scrollbars.scss";
 
 :root {
   --action-button-fill-color: #{lighten($p-petrol-light, 0%)};
